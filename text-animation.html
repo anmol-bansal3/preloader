@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> css </title>
+	<style>
+	body{
+		margin: 0;
+		padding: 0;
+	    height: 100vh;
+	    background-color: black;
+	    font-size: 5em;
+	    align-items: center;
+		display:flex;
+		justify-content: center;
+	}
+	p{
+		color: white;
+		letter-spacing: 10px;
+		position: relative;
+		overflow: hidden;
+		background: linear-gradient(90deg,#000,#fff,#000);
+		animation: animate 5s linear infinite;
+		background-size: 80%;
+		-webkit-background-clip:text;
+		-webkit-text-fill-color:transparent;
+	}
+	@keyframes animate 
+	{
+		0%{
+			background-position: -500%;
+		}
+		100%{
+			background-position: 500%;
+		}
+	}
+</style>
+</head>
+<body>
+	 <p>STAY ACTIVE</p>
+
+</body>
+</html>
